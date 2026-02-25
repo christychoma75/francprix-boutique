@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Francprix Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/translations.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Francprix<span>Boutique</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+                    <li><a href="products.html" data-i18n="nav-shop">Shop</a></li>
+                    <li><a href="about.html" data-i18n="nav-about">About</a></li>
+                    <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+                    <li><a href="cart.html" class="active cart-link"><span data-i18n="nav-cart">Cart</span> <span class="cart-count">0</span></a></li>
+                    <li class="language-selector">
+                        <button class="lang-btn" onclick="toggleLanguageMenu()">🌐 <span id="current-lang">EN</span></button>
+                        <div class="lang-menu" id="lang-menu">
+                            <button onclick="setLanguage('en')" class="lang-option">English</button>
+                            <button onclick="setLanguage('fr')" class="lang-option">Français</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Shopping Cart</h1>
+        <p>Review Your Items</p>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="container">
+            <div id="empty-cart" class="empty-cart">
+                <h2>Your cart is empty</h2>
+                <p>Start shopping to add items to your cart</p>
+                <a href="products.html" class="btn btn-primary">Continue Shopping</a>
+            </div>
+
+            <div id="cart-content" class="cart-content" style="display: none;">
+                <div class="cart-wrapper">
+                    <!-- Cart Items -->
+                    <div class="cart-items">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items-body">
+                                <!-- Cart items loaded by JavaScript -->
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Cart Summary -->
+                    <aside class="cart-summary">
+                        <div class="summary-card">
+                            <h3>Order Summary</h3>
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span id="subtotal">0 FC</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Shipping:</span>
+                                <span id="shipping">0 FC</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Tax (5%):</span>
+                                <span id="tax">0 FC</span>
+                            </div>
+                            <hr>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span id="total">0 FC</span>
+                            </div>
+                            <button class="btn btn-primary btn-full" onclick="proceedToCheckout()">Proceed to Checkout</button>
+                            <a href="products.html" class="btn btn-secondary btn-full">Continue Shopping</a>
+                        </div>
+
+                        <div class="promo-card">
+                            <h4>Promo Code</h4>
+                            <input type="text" id="promo-code" placeholder="Enter code">
+                            <button class="btn btn-secondary btn-full" onclick="applyPromo()">Apply</button>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Francprix</h4>
+                    <p>Premium fashion boutique serving Gombe, Kinshasa with quality clothing and accessories for men and women.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 Email: info@francprix.cd</p>
+                    <p>📱 Phone: +243 (0) 123 456 789</p>
+                    <p>📍 Location: Gombe, Kinshasa, Congo</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Francprix Boutique. All rights reserved. | Gombe, Kinshasa, Congo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

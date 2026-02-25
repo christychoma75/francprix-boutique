@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Francprix Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/translations.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Francprix<span>Boutique</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+                    <li><a href="products.html" data-i18n="nav-shop">Shop</a></li>
+                    <li><a href="about.html" class="active" data-i18n="nav-about">About</a></li>
+                    <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link"><span data-i18n="nav-cart">Cart</span> <span class="cart-count">0</span></a></li>
+                    <li class="language-selector">
+                        <button class="lang-btn" onclick="toggleLanguageMenu()">🌐 <span id="current-lang">EN</span></button>
+                        <div class="lang-menu" id="lang-menu">
+                            <button onclick="setLanguage('en')" class="lang-option">English</button>
+                            <button onclick="setLanguage('fr')" class="lang-option">Français</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>About Francprix Boutique</h1>
+        <p>Quality Fashion Since 2020</p>
+    </section>
+
+    <!-- About Content -->
+    <section class="about">
+        <div class="container">
+            <div class="about-intro">
+                <h2>Our Story</h2>
+                <p>Francprix Boutique was founded with a single vision: to bring premium, trendy fashion to Gombe, Kinshasa. What started as a small passion project has grown into a beloved fashion destination for men and women who appreciate quality, style, and value.</p>
+                <p>We believe that great fashion is accessible to everyone. That's why we carefully curate our collections to offer the latest trends at competitive prices, without ever compromising on quality.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3>🎯 Our Mission</h3>
+                    <p>To empower our customers with fashionable, high-quality clothing that makes them feel confident and beautiful.</p>
+                </div>
+                <div class="about-card">
+                    <h3>👁️ Our Vision</h3>
+                    <p>To be the premier fashion boutique in Kinshasa, known for exceptional quality, service, and style.</p>
+                </div>
+                <div class="about-card">
+                    <h3>💎 Our Values</h3>
+                    <p>Quality, integrity, customer satisfaction, and supporting local fashion culture in Congo.</p>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>What We Offer</h2>
+                <div class="offerings-grid">
+                    <div class="offering-item">
+                        <h4>Women's Fashion</h4>
+                        <ul>
+                            <li>Designer Dresses</li>
+                            <li>Elegant Skirts</li>
+                            <li>Trendy Jeans</li>
+                            <li>Accessories</li>
+                            <li>Footwear</li>
+                        </ul>
+                    </div>
+                    <div class="offering-item">
+                        <h4>Men's Fashion</h4>
+                        <ul>
+                            <li>Premium Suits</li>
+                            <li>Casual Wear</li>
+                            <li>Designer Shoes</li>
+                            <li>Watches & Accessories</li>
+                            <li>Business Attire</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>Why Shop With Us?</h2>
+                <div class="reasons-grid">
+                    <div class="reason-item">
+                        <h4>✓ Authentic Quality</h4>
+                        <p>Every item is carefully selected for quality and durability</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>✓ Latest Trends</h4>
+                        <p>We stay updated with international fashion trends</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>✓ Competitive Prices</h4>
+                        <p>Premium fashion at prices everyone can afford</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>✓ Customer Service</h4>
+                        <p>Friendly, responsive support for all your fashion needs</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>✓ Fast Delivery</h4>
+                        <p>Quick processing and reliable delivery in Kinshasa</p>
+                    </div>
+                    <div class="reason-item">
+                        <h4>✓ Local Pride</h4>
+                        <p>Supporting fashion entrepreneurs in Gombe, Kinshasa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <h2>Meet the Team</h2>
+                <div class="team-info">
+                    <p>Francprix Boutique is family-owned and operated with a passion for fashion and customer satisfaction. Our team works tirelessly to ensure every customer has an exceptional shopping experience.</p>
+                    <p>Visit us in Gombe to experience our collections in person, or shop online anytime, anywhere!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Find Your Perfect Style?</h2>
+            <a href="products.html" class="btn btn-primary btn-large">Start Shopping Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Francprix</h4>
+                    <p>Premium fashion boutique serving Gombe, Kinshasa with quality clothing and accessories for men and women.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 Email: info@francprix.cd</p>
+                    <p>📱 Phone: +243 (0) 123 456 789</p>
+                    <p>📍 Location: Gombe, Kinshasa, Congo</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Francprix Boutique. All rights reserved. | Gombe, Kinshasa, Congo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

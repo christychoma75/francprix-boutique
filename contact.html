@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Francprix Boutique</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/translations.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1>Francprix<span>Boutique</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+                    <li><a href="products.html" data-i18n="nav-shop">Shop</a></li>
+                    <li><a href="about.html" data-i18n="nav-about">About</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="nav-contact">Contact</a></li>
+                    <li><a href="cart.html" class="cart-link"><span data-i18n="nav-cart">Cart</span> <span class="cart-count">0</span></a></li>
+                    <li class="language-selector">
+                        <button class="lang-btn" onclick="toggleLanguageMenu()">🌐 <span id="current-lang">EN</span></button>
+                        <div class="lang-menu" id="lang-menu">
+                            <button onclick="setLanguage('en')" class="lang-option">English</button>
+                            <button onclick="setLanguage('fr')" class="lang-option">Français</button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Get in Touch With Us</p>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="product-inquiry">Product Inquiry</option>
+                                <option value="order-issue">Order Issue</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div id="form-message" class="form-message"></div>
+                </div>
+
+                <!-- Contact Information -->
+                <aside class="contact-info">
+                    <div class="info-card">
+                        <h3>📍 Location</h3>
+                        <p>Gombe, Kinshasa</p>
+                        <p>Democratic Republic of Congo</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:info@francprix.cd">info@francprix.cd</a></p>
+                        <p><a href="mailto:support@francprix.cd">support@francprix.cd</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>📱 Phone</h3>
+                        <p><a href="tel:+243123456789">+243 (0) 123 456 789</a></p>
+                        <p><a href="https://wa.me/243123456789" target="_blank">WhatsApp</a></p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🕐 Business Hours</h3>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                        <p>Saturday: 10:00 AM - 5:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>🤝 Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">f</a>
+                            <a href="#" class="social-icon">📷</a>
+                            <a href="#" class="social-icon">💬</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How long does delivery take?</h4>
+                    <p>We process orders within 1-2 business days and deliver within Kinshasa within 3-5 business days.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you accept returns?</h4>
+                    <p>Yes! We accept returns within 7 days of purchase for unused items in original packaging.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept mobile money, bank transfers, and cash on delivery.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I exchange items?</h4>
+                    <p>Yes, exchanges are available for different sizes within 7 days of purchase.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer bulk discounts?</h4>
+                    <p>Yes! Contact us for special pricing on bulk orders.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I visit your store?</h4>
+                    <p>Absolutely! Visit us in Gombe during business hours. Call ahead for special appointments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About Francprix</h4>
+                    <p>Premium fashion boutique serving Gombe, Kinshasa with quality clothing and accessories for men and women.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📧 Email: info@francprix.cd</p>
+                    <p>📱 Phone: +243 (0) 123 456 789</p>
+                    <p>📍 Location: Gombe, Kinshasa, Congo</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Francprix Boutique. All rights reserved. | Gombe, Kinshasa, Congo</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
