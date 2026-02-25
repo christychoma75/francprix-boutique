@@ -1149,6 +1149,14 @@ body {
         padding: 0 10px;
     }
 
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
     .logo h1 {
         font-size: 0.9rem;
     }
@@ -1193,6 +1201,14 @@ body {
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
     }
 
     .nav-wrapper {
